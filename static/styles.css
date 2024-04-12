@@ -1,0 +1,56 @@
+/* Estilo para o título h1 */
+h1 {
+    text-align: center; /* Alinha o texto ao centro */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os rótulos dos campos de entrada */
+label {
+    display: block; /* Exibe os rótulos em blocos */
+    margin-bottom: 5px; /* Adiciona espaço abaixo dos rótulos */
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"],
+select {
+    width: 100%; /* Define a largura dos campos para ocupar 100% da largura disponível */
+    padding: 8px; /* Adiciona espaço interno */
+    margin-bottom: 10px; /* Adiciona espaço abaixo dos campos */
+    box-sizing: border-box; /* Garante que o tamanho total do elemento inclua o preenchimento e a borda */
+}
+
+/* Estilo para o botão de submissão */
+button[type="submit"] {
+    display: block; /* Exibe o botão em bloco */
+    width: 100%; /* Define a largura para ocupar 100% da largura disponível */
+    padding: 10px; /* Adiciona espaço interno */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona cantos arredondados ao botão */
+    cursor: pointer; /* Altera o cursor para indicar que o botão é clicável */
+}
+
+/* Estilo para mensagens de erro */
+.error {
+    color: red; /* Cor vermelha para a mensagem de erro */
+}
+
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}

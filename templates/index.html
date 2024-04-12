@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Bases</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Conversor de Bases</h1>
+    
+    <form action="/converter" method="post">
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" placeholder="Digite um número inteiro" required><br><br>
+        
+        <label for="base">Base:</label>
+        <select id="base" name="base" required>
+            <option value="binario">Binário</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select><br><br>
+        
+        <button type="submit">Converter</button>
+    </form>
+    
+    {% if resultado %}
+    <div class="message success">
+        <p>Resultado: {{ resultado }}</p>
+    </div>
+{% endif %}
+
+{% if error %}
+    <div class="message error">
+        <p>{{ error }}</p>
+    </div>
+{% endif %}
+
+</body>
+</html>
