@@ -47,7 +47,7 @@ def criar_bases():
 
 ```
 
-- Criar uma rota para a raiz, e renderiza o html index.html que, obrigatoriamente, precisa estar no diretorio templates.
+- Cria uma rota para a raiz e renderiza o html index.html que, obrigatoriamente, precisa estar no diretorio templates.
 
 ---
 
